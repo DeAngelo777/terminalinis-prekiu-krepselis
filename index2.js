@@ -113,6 +113,7 @@ const singleProductShoppingList = [
 ];
 
 console.log(shoppingList(singleProductShoppingList));
+
 /*
 Jūsų prekių krepšelyje yra 1 prekė:
 --------------------------------------------------

@@ -18,7 +18,15 @@ const emptyList = [];
 Šiuo metu, jūsų prekių krepšelis yra tuščias.
 */
 
+const singleProductShoppingList2 = [
+    {
+        id: 2,
+        name: 'Kivi',
+        amount: 23,
+        unitPrice: 14,
+    },
 
+];
 
 // console.log(productDetails(emptyList, 42069));
 /*
@@ -45,6 +53,32 @@ const firstShoppingList = [
         unitPrice: 45,
     },
 ];
+
+
+
+const ids = []
+singleProductShoppingList2.forEach(({id}) => ids.push(id) )
+
+console.log(ids);
+
+
+// console.log(firstShoppingList[0].id);
+
+
+// for (let i = 0; i < firstShoppingList.length; i++){
+
+
+//     if (firstShoppingList[1].id === i)
+        
+//     console.log(i);
+// }
+
+
+
+
+
+
+
 
 
 
@@ -167,6 +201,19 @@ Viso mokėti   | 0.45 Eur
 ------------------------
 */
 
+
+// console.log(firstShoppingList[0].name);
+// function shoppingList(list,id){
+
+//     console.log('Jūsų prekių krepšelyje yra ' + list.length + ' prekes');
+//     console.log(`-----------------------------------------------------------`);
+// console.log('Pavadinimas | Kiekis  | Vieneto kaina | Viso mokėti');
+//     console.log(`-----------------------------------------------------------`);
+//     console.log('1 ' + list[0].name + ' | ' + list[0].amount + ' | ' + list[0].unitPrice/100 + ' Eur' + '      | ' +  (list[0].amount * list[0].unitPrice/100).toFixed(2) + ' Eur');
+//     console.log(`-----------------------------------------------------------`);
+// }
+
+
 const singleProductShoppingList = [
     {
         id: 2,
@@ -174,9 +221,27 @@ const singleProductShoppingList = [
         amount: 23,
         unitPrice: 14,
     },
+
 ];
 
+
 // console.log(shoppingList(singleProductShoppingList));
+
+
+
+
+        // } if (i == id) {
+        //    return console.log('tinka');
+        
+        // } else 
+        
+        // console.log('netinka');
+
+
+
+
+
+
 /*
 Jūsų prekių krepšelyje yra 1 prekė:
 --------------------------------------------------
