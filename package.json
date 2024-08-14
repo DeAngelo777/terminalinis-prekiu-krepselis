@@ -6,10 +6,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "index": "watch node ./index.js",
-    "sl": "watch node ./js/shoppingList.js",
-    "pd": "watch node ./js/productDetails.js",
-    "index2": "watch node ./index2.js"
+    "index": "watch node ./index.js"
   },
   "author": "",
   "license": "ISC",
