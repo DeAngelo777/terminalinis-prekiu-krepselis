@@ -1,4 +1,5 @@
-const { adjustNameEndings, validateQuantity } = require('./helpers');
+// Product Details Pagrindinė funkcija
+const { getItemQuantityText, validateQuantity } = require('./helpers');
 
 module.exports = function(cart, id) {
     const item = cart.find(item => item.id === id);
@@ -8,14 +9,14 @@ module.exports = function(cart, id) {
     if (!validateQuantity(item.amount)) {
         return `Klaida: Kiekis prekei ${item.name} nėra sveikasis skaičius.`;
     }
-    const adjustedName = adjustNameEndings(item.name, item.amount);
-    return `------------------------------
+    const line = '-'.repeat(30);
+    return `${line}
 Prekės informacija
-------------------------------
+${line}
 ID            | ${item.id}
-Pavadinimas   | ${adjustedName}
+Pavadinimas   | ${item.name}
 Kiekis        | ${item.amount} vnt
-Vieneto kaina | ${item.unitPrice.toFixed(2)} Eur
-Viso mokėti   | ${(item.amount * item.unitPrice).toFixed(2)} Eur
-------------------------------`;
+Vieneto kaina | ${(item.unitPrice / 100).toFixed(2)} Eur
+Viso mokėti   | ${(item.amount * item.unitPrice / 100).toFixed(2)} Eur
+${line}`;
 };

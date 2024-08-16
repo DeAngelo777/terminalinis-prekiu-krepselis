@@ -1,10 +1,4 @@
-function adjustNameEndings(name, amount) {
-    if (amount > 1) {
-        return name.endsWith('s') ? name.slice(0, -1) + 'i' : name;
-    }
-    return name;
-}
-
+// Paglbinė funkcija
 function getItemQuantityText(amount) {
     if (amount === 1) {
         return 'prekė';
@@ -17,4 +11,4 @@ function validateQuantity(amount) {
     return Number.isInteger(amount) && amount >= 0;
 }
 
-module.exports = { adjustNameEndings, getItemQuantityText, validateQuantity };
+module.exports = { getItemQuantityText, validateQuantity };

@@ -1,4 +1,5 @@
-// Vieta reikiamų failų importavimui... jei reikia tokių 👀
+const shoppingList = require('./js/shoppingList');
+const productDetails = require('./js/productDetails');
 
 /*
 --------------------------------------------------------
