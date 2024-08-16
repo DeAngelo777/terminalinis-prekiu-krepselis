@@ -19,4 +19,3 @@ Vieneto kaina | ${item.unitPrice.toFixed(2)} Eur
 Viso mokėti   | ${(item.amount * item.unitPrice).toFixed(2)} Eur
 ------------------------------`;
 };
-

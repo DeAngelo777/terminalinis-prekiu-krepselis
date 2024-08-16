@@ -18,4 +18,3 @@ function validateQuantity(amount) {
 }
 
 module.exports = { adjustNameEndings, getItemQuantityText, validateQuantity };
-
