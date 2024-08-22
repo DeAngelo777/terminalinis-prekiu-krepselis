@@ -13,7 +13,7 @@ function validateQuantity(amount) {
 }
 
 function productDetails(cart, id) {
-    const item = cart.find(item => item.id === id);
+    const item = cart.find(function(item) { return item.id === id; });
     if (!item) {
         return `Prekė, su ID: ${id} neegzistuoja.`;
     }
