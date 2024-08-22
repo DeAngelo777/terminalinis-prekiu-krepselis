@@ -1,7 +1,18 @@
-// Product Details Pagrindinė funkcija
-const { getItemQuantityText, validateQuantity } = require('./helpers');
+export { productDetails, getItemQuantityText, validateQuantity };
 
-module.exports = function(cart, id) {
+function getItemQuantityText(amount) {
+    if (amount === 1) {
+        return 'prekė';
+    } else {
+        return 'prekės';
+    }
+}
+
+function validateQuantity(amount) {
+    return Number.isInteger(amount) && amount >= 0;
+}
+
+function productDetails(cart, id) {
     const item = cart.find(item => item.id === id);
     if (!item) {
         return `Prekė, su ID: ${id} neegzistuoja.`;
@@ -19,4 +30,4 @@ Kiekis        | ${item.amount} vnt
 Vieneto kaina | ${(item.unitPrice / 100).toFixed(2)} Eur
 Viso mokėti   | ${(item.amount * item.unitPrice / 100).toFixed(2)} Eur
 ${line}`;
-};
+}

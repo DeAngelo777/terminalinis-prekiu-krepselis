@@ -1,6 +1,5 @@
-const shoppingList = require('./js/shoppingList');
-const productDetails = require('./js/productDetails');
-
+import { shoppingList } from './js/shoppingList.js';
+import { productDetails } from './js/productDetails.js';
 /*
 --------------------------------------------------------
 KOMENTARAS:
